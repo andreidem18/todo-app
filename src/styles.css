@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans:ital@1&family=Open+Sans:wght@700&display=swap");
+
+body {
+  background: url("https://wallpaper.dog/large/17275256.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+.col-sm-5 {
+  padding: 5px;
+  width: 100%;
+}
+.container {
+  padding: 15px;
+  margin: auto;
+  position: relative;
+}
+@media (min-width: 576px) {
+  .row {
+    display: flex;
+  }
+  .container {
+    max-width: 579px;
+  }
+  .col-sm-5 {
+    width: 41.666%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 721px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 976px;
+  }
+}
+
