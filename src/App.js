@@ -70,8 +70,8 @@ export default function App() {
       console.log(update);
       setUpdate(null);
       setHaveToRender(true);
-      // const promise = axios.put(`https://todos-academlo.herokuapp.com/api/todo/${update.id}`, update);
-      // promise.then(res => console.log('Me actualicé'));
+      const promise = axios.put(`https://todos-academlo.herokuapp.com/api/todo/${update._id}`, update);
+      promise.then(res => console.log('Me actualicé'));
     }
   }, [update]);
 
