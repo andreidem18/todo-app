@@ -67,11 +67,12 @@ export default function App() {
 
   useEffect(() => {
     if (update) {
-      console.log(update);
+      axios.put(
+        `https://todos-academlo.herokuapp.com/api/todo/${update._id}`,
+        update
+      );
       setUpdate(null);
       setHaveToRender(true);
-      const promise = axios.put(`https://todos-academlo.herokuapp.com/api/todo/${update._id}`, update);
-      promise.then(res => console.log('Me actualicé'));
     }
   }, [update]);
 
